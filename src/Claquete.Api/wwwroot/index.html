@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claquete</title>
+  <meta name="description" content="Claquete: acervo de filmes, elenco e gêneros com painel e laboratório SQL.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#/">
+      <svg class="marca-icone" viewBox="0 0 32 32" aria-hidden="true">
+        <rect x="3" y="12" width="26" height="17" rx="2" fill="currentColor" opacity=".9"/>
+        <path d="M3 8.5 27.6 3l1 4.4L4 12.9z" fill="currentColor"/>
+        <path d="M8 7.4l3.4 4.2M14 6l3.4 4.2M20 4.7l3.4 4.2" stroke="var(--fundo)" stroke-width="2"/>
+      </svg>
+      <span>Claquete</span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#/" data-rota="catalogo">Catálogo</a>
+      <a href="#/atores" data-rota="atores">Elenco</a>
+      <a href="#/painel" data-rota="painel">Painel</a>
+      <a href="#/laboratorio" data-rota="laboratorio">Laboratório SQL</a>
+    </nav>
+  </header>
+
+  <main id="app" class="conteudo" tabindex="-1">
+    <p class="carregando">Rodando a cena…</p>
+  </main>
+
+  <div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+  <footer class="rodape">
+    Claquete · acervo de filmes em .NET + SQL · <span id="provedor"></span>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
